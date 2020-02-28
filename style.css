@@ -63,13 +63,28 @@
     margin: 0;
 }
 
+body {
+    height: 100%;
+}
+
 a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
-    max-width: 1381px;
+    max-width: 1410px;
     padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .address {
@@ -92,12 +107,87 @@ a {
     font-weight: normal;
     font-style: normal;
     line-height: 18px;
-    margin: 0 1.4%;
-    
+    margin: 0 1.4%;   
 }
 
 .address__icons {
     margin: 0 9px;
     position: relative;
     top: 2px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 148px; 
+}
+
+.header__menu {
+
+}
+
+.header__logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  
+}
+
+.header__logo:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.menu__icon {
+
+}
+
+.menu__body {
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__li {
+    padding: 0px 40px;
+    position: relative;
+}
+
+.menu__li1:after {
+    content: ' ';
+    width: 1px;
+    height: 77px;
+    top: -27px;
+    right: 0;
+    background-color: #e5e5e5;
+    position: absolute;
+}
+
+.menu__link {
+    color: #000000;
+    font-family: "Helvetica World", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+}
+
+.menu__link:hover {
+    color: #989898;
+}
+
+.main-screen {
+    overflow: hidden;
+    flex-grow: 1;
+    background-image: url(img/фон_1_экрана.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
