@@ -1,16 +1,10 @@
 @font-face {
-  font-family: '11420';
-  src: url('11420.eot');
-  src: url('11420.eot?#iefix') format('embedded-opentype'),
-       url('11420.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lunapolis';
-  src: url('Lunapolis.ttf') format('truetype'),
-       url('Lunapolis.woff') format('woff');
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url('HelveticaNeueLTStd-Lt.eot');
+  src: url('HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+       url('HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+       url('HelveticaNeueLTStd-Lt.woff') format('woff'),
+       url('HelveticaNeueLTStd-Lt.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
