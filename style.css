@@ -2,41 +2,41 @@
     font-family: 'HelveticaNeueCyr';
     src: url('fonts/HelveticaNeueCyr-Light.eot');
     src: url('fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-    url('fonts/HelveticaNeueCyr-Light.woff') format('woff'),
-    url('fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+        url('fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} 
+}
 
 @font-face {
     font-family: 'HelveticaNeueLTStd-Lt';
     src: url('fonts/HelveticaNeueLTStd-Lt.eot');
     src: url('fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
-         url('fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
-         url('fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
-         url('fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2');
+        url('fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+        url('fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+        url('fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 @font-face {
     font-family: 'HelveticaWorld';
     src: url('fonts/HelveticaWorld-Regular.eot');
     src: url('fonts/HelveticaWorld-Regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/HelveticaWorld-Regular.ttf') format('truetype'),
-         url('fonts/HelveticaWorld-Regular.woff') format('woff'),
-         url('fonts/HelveticaWorld-Regular.woff2') format('woff2');
+        url('fonts/HelveticaWorld-Regular.ttf') format('truetype'),
+        url('fonts/HelveticaWorld-Regular.woff') format('woff'),
+        url('fonts/HelveticaWorld-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-  @font-face {
+@font-face {
     font-family: 'HelveticaWorld';
     src: url('fonts/HelveticaWorld-Bold.eot');
     src: url('fonts/HelveticaWorld-Bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/HelveticaWorld-Bold.ttf') format('truetype'),
-         url('fonts/HelveticaWorld-Bold.woff') format('woff'),
-         url('fonts/HelveticaWorld-Bold.woff2') format('woff2');
+        url('fonts/HelveticaWorld-Bold.ttf') format('truetype'),
+        url('fonts/HelveticaWorld-Bold.woff') format('woff'),
+        url('fonts/HelveticaWorld-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
@@ -45,19 +45,19 @@
     font-family: 'Lunapolis';
     src: url('fonts/11420.eot');
     src: url('fonts/11420.eot?#iefix') format('embedded-opentype'),
-         url('fonts/11420.woff2') format('woff2');
+        url('fonts/11420.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
+
 @font-face {
     font-family: 'Lunapolis';
     src: url('fonts/Lunapolis.ttf') format('truetype'),
-         url('fonts/Lunapolis.woff') format('woff');
+        url('fonts/Lunapolis.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -97,7 +97,7 @@ li {
     align-items: center;
 }
 
-.address__phone, 
+.address__phone,
 .address__email {
     font-family: 'HelveticaWorld', sans-serif;
     font-size: 18px;
@@ -108,7 +108,7 @@ li {
     font-weight: normal;
     font-style: normal;
     line-height: 18px;
-    margin: 0 1.9%;   
+    margin: 0 1.9%;
 }
 
 .address__icons {
@@ -219,6 +219,44 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    box-sizing: border-box;
+}
+
+.main-screen__content {
+    margin: 10% 0 0 7%;
+    max-width: 70%;
+    z-index: 100;
+}
+
+.main-screen__heading {
+    color: #ffffff;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 73px;
+    font-weight: normal;
+    letter-spacing: 7.3px;
+}
+
+.main__text{
+    color: #ffffff;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    margin: 28px 0 41px;
+}
+
+.main__button {
+    display: inline-block;
+    padding: 0 32px;
+    height: 59px;
+    line-height: 59px;
+    border: 1px solid #dbb972;
+    color: #f1c872;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
 }
 
 .catalog {
@@ -255,13 +293,152 @@ li {
     background-color: transparent;
     position: absolute;
     right: 49%;
-    top: 36px;  
+    top: 36px;
+}
+
+.catalog-wrapper {
+    display: grid;
+    grid-template-columns: 264px 1fr;
+    grid-gap: 30px;
+    background-color: transparent;
+}
+
+.catalog__heading {
+    color: #212121;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+
+.catalog__menu {
+    display: grid;
+    border: 1px solid #e2e2e2;
+    background-color: transparent;
+}
+
+.menu__item {
+    color: #212121;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    border: 1px solid #e2e2e2;
+    padding: 16px 46px;
+    position: relative;
+}
+
+.menu__item:before {
+    content: ' ';
+    height: 5.65px;
+    width: 5.65px;
+    background-color: #8d8d8d;
+    z-index: 2;
+    position: absolute;
+    left: 25px;
+    top: 28px;
+    transform: rotate(45deg);
+}
+
+.menu__item:after {
+    content: ' ';
+    height: 7px;
+    width: 5px;
+    background-color: transparent;
+    background-image: url(img/arrow.png);
+    z-index: 2;
+    position: absolute;
+    right: 25px;
+    top: 28px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 56px;
+    background-color: transparent;
+    padding: 30px;
+}
+
+.products__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+.products__card:hover {
+    box-shadow: 0 4px 51px rgba(2, 4, 5, 0.13);
+}
+
+.products__link {
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.products__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.products__name {
+    color: #212121;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    margin-bottom: 18px;
+}
+
+.products__art {
+    color: #8b8b8b;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
+
+.products__price {
+    color: #212121;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    margin: 30px 0 20px;
+}
+
+.product__buy-button {
+    color: #1e1e1e;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34.07px;
+    letter-spacing: 1.19px;
+    width: 100%;
+    height: 64px;
+    line-height: 65px;
+    border: 1px solid #232323;
+    background-color: #ffffff;
 }
 
 .preferences-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 51px 0;  
+    margin: 51px 0;
 }
 
 .preferences__item {
@@ -271,9 +448,9 @@ li {
 }
 
 .preferences__10 {
-    font-family: "HelveticaNeueLTStd-Lt", sans-serif;
+    font-family: 'HelveticaNeueLTStd-Lt', sans-serif;
     font-size: 77px;
-    font-weight: 200 ;
+    font-weight: 200;
     line-height: 77px;
     color: #dbb972;
     letter-spacing: 3.85px;
@@ -292,11 +469,11 @@ li {
 }
 
 .preferences__text_money {
-    margin-top: 18px;   
+    margin-top: 18px;
 }
 
 .preferences__text_truck {
-    margin-top: 24px;   
+    margin-top: 24px;
 }
 
 .preferences__text_10 {
