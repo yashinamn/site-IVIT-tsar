@@ -12,10 +12,14 @@
 <body>
     <header class="header">
         <address class="address">
-            <a href="#" class="address__phone"><img class="address__icons" src="img/phone.png" alt="phone"><span
-                    class="address__phone_b">+7 (495) 366 66 54</span></a>
-            <a href="#" class="address__email"><img class="address__icons" src="img/mail.png" alt="mail"><span
-                    class="address__phone_b">supportusers@tsar.ru</span></a>
+            <a href="#" class="address__phone">
+                <img class="address__icons" src="img/phone.png" alt="phone">
+                <span class="address__phone_b">+7 (495) 366 66 54</span>
+            </a>
+            <a href="#" class="address__email">
+                <img class="address__icons" src="img/mail.png" alt="mail">
+                <span class="address__phone_b">supportusers@tsar.ru</span>
+            </a>
         </address>
         <div class="container">
             <nav class="header__menu menu">
@@ -25,29 +29,26 @@
                     <span></span>
                 </div>
                 <ul class="menu__list">
-                    <li class="menu__li menu__li1"><a href="#" class="menu__link">КАТАЛОГ</a></li>
-                    <li class="menu__li menu__li1"><a href="#" class="menu__link">О КОМПАНИИ</a></li>
-                    <li class="menu__li"><a href="#" class="menu__link">ПРЕИМУЩЕСТВА</a></li>
-                    <li class="menu__li menu__li_logo"><a href="index.html" class="eader__logo"><img src="img/Лого.png"
-                                alt=""></a></li>
-                    <li class="menu__li menu__li1"><a href="#" class="menu__link">ДОСТАВКА И ОПЛАТА</a></li>
-                    <li class="menu__li menu__li1"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
-                    <li class="menu__li menu__li_cart"><a href="#" class="menu__link"><img src="img/cart.png"
-                                alt=""></a><span class="cart__sum">0</span></li>
+                    <li class="menu__li menu__li1"><a href="#catalog" class="menu__link js-animate-scroll">КАТАЛОГ</a></li>
+                    <li class="menu__li menu__li1"><a href="#about-us" class="menu__link js-animate-scroll">О&nbsp;КОМПАНИИ</a></li>
+                    <li class="menu__li menu__li4"><a href="#preferences" class="menu__link js-animate-scroll">ПРЕИМУЩЕСТВА</a></li>
+                    <li class="menu__li menu__li1 menu__li5"><a href="#" class="menu__link ">ДОСТАВКА&nbsp;И&nbsp;ОПЛАТА</a></li>
+                    <li class="menu__li menu__li1"><a href="#contacts" class="menu__link js-animate-scroll">КОНТАКТЫ</a></li>
+                    <li class="menu__li menu__li_cart"><a href="#" class="menu__link "><img src="img/cart.png" alt="cart"><span class="cart__sum">0</span></a></li>
                 </ul>
+                <a href="index.html" class="header__logo js-animate-scroll"><img src="img/Лого.png" alt="logo"></a>
             </nav>
         </div>
         <div class="main-screen">
-
         </div>
     </header>
     <main class="main">
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <h2 class="main__headding">КАМНИ МУССАНИТЫ</h2>
             <img class="ring" src="img/Кольцо.png" alt="ring">
             <div class="container"></div>
         </section>
-        <section class="preferences">
+        <section class="preferences" id="preferences">
             <h2 class="main__headding">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="container">
                 <div class="preferences-wrapper">
@@ -58,7 +59,7 @@
                     </div>
                     <div class="preferences__item">
                         <img src="img/машина.png" alt="" class="preferences__img">
-                        <p class="preferences__text preferences__text_truck">Прямые поставки 
+                        <p class="preferences__text preferences__text_truck">Прямые поставки
                             <br> от заводов производителей <br>
                             разных стран</p>
                     </div>
@@ -75,16 +76,21 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <h2 class="main__headding">О НАШЕЙ КОМПАНИИ</h2>
             <div class="container">
                 <div class="about-us-wrapper">
                     <div class="about-us__item">
-                        <img class="about-us__img"  src="img/бриллиант.png" alt="brilliant">
+                        <img class="about-us__img" src="img/бриллиант.png" alt="brilliant">
                         <h3 class="about-us__heading">КОРОТКО О НАС</h3>
-                        <p class="about-us__text">На&nbsp;рынке камней 10&nbsp;лет. Прямые поставки от&nbsp;заводов производителей разных стран&nbsp;&mdash; позволяют давать Вам лучшие цены!. Весь товар сертифицирован и&nbsp;поставляется с&nbsp;документами</p>
-                        <p class="about-us__text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                            nec sagittis sem nibh id&nbsp;elit. Duis sed odio sit amet nibh vulputate cursus a&nbsp;sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a&nbsp;odio tincidunt</p>
+                        <p class="about-us__text">На&nbsp;рынке камней 10&nbsp;лет. Прямые поставки от&nbsp;заводов
+                            производителей разных стран&nbsp;&mdash; позволяют давать Вам лучшие цены!. Весь товар
+                            сертифицирован и&nbsp;поставляется с&nbsp;документами</p>
+                        <p class="about-us__text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin
+                            gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                            elit consequat ipsum
+                            nec sagittis sem nibh id&nbsp;elit. Duis sed odio sit amet nibh vulputate cursus a&nbsp;sit
+                            amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a&nbsp;odio tincidunt</p>
                     </div>
                     <div class="about-us__item">
                         <img class="about-us__img" src="img/доставка.png" alt="dostavka">
@@ -92,7 +98,9 @@
                         <p class="about-us__text">Самовывоз, Курьерские службы&nbsp;&mdash; СДЭК, EMS.</p>
                         <img class="about-us__img" src="img/кредитка.png" alt="credit">
                         <h3 class="about-us__heading">ОПЛАТА</h3>
-                        <p class="about-us__text">Карта Сбербанка/Тинькофф; Денежные переводы &laquo;Золотая Корона&raquo;, Western Union; Наличными при самовывозе; Картой при самовывозе; На&nbsp;расчетный счет&nbsp;юр. лица.</p>
+                        <p class="about-us__text">Карта Сбербанка/Тинькофф; Денежные переводы &laquo;Золотая
+                            Корона&raquo;, Western Union; Наличными при самовывозе; Картой при самовывозе;
+                            На&nbsp;расчетный счет&nbsp;юр. лица.</p>
                     </div>
                 </div>
                 <h3 class="about-us__heading">ДОКУМЕНТЫ</h3>
@@ -116,11 +124,52 @@
             </div>
 
         </section>
+        <address class="address_footer" id="contacts">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34426.06008575757!2d56.17514708467941!3d54.76902022332325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab348727f66f240e!2z0YHRgtCw0L3RhtC40Y8g0KjQsNC60YjQsA!5e0!3m2!1sru!2sru!4v1583044245958!5m2!1sru!2sru"
+                width="100%" height="536px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="container">
+                <div class="contacts">
+                    <h3 class="contacts__heading">НАШИ КОНТАКТЫ</h3>
+                    <a href="#" class="contacts__link"><img class="contacts__icons contacts__icons_geo"
+                            src="img/местоположение.png" alt="geo"><span class="contacts__span">Москва, проспект мира
+                            95, стр. 1</span></a>
+                    <a href="#" class="contacts__link"><img class="contacts__icons" src="img/трубка.png"
+                            alt="phone"><span class="contacts__span">+7 (926) 548 111 8</span></a>
+                    <a href="#" class="contacts__link"><img class="contacts__icons" src="img/письмо.png"
+                            alt="mail"><span class="contacts__span">tsarpavel@inbox.ru</span></a>
+                </div>
+            </div>
+        </address>
     </main>
-    <footer>
-        <address></address>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer__logo">
+                    <a class="footer__logo_link js-animate-scroll" href="index.html"><img src="img/Лого_серый.png" alt="logo"></a>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__heading">Продукция</h3>
+                    <a class="footer__text js-animate-scroll" href="#catalog">Муассаниты: <br>
+                        Синтетические бриллианты</a>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__heading">Меню сайта</h3>
+                    <a class="footer__text js-animate-scroll" href="#about-us">О компании</a>
+                    <a class="footer__text js-animate-scroll" href="#catalog">Продукция</a>
+                    <a class="footer__text" href="#">Доставка и оплата</a>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__heading">Наши контакты</h3>
+                    <a class="footer__text" href="#">Телефон: +7 (495) 588 88 38</a>
+                    <a class="footer__text" href="#">По вопросам рекламы: supportusers@tsar.ru</a>
+                    <a class="footer__text" href="#">По вопросам качества товара: supportusers@tsar.ru</a>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    <script type="text/javascript" src="index.js">
+    </script>
 
 </body>
 

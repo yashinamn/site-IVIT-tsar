@@ -99,7 +99,7 @@ li {
 
 .address__phone, 
 .address__email {
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #989898;
@@ -108,7 +108,7 @@ li {
     font-weight: normal;
     font-style: normal;
     line-height: 18px;
-    margin-left: 1.9%;   
+    margin: 0 1.9%;   
 }
 
 .address__icons {
@@ -118,9 +118,6 @@ li {
 }
 
 .header__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
@@ -135,21 +132,22 @@ li {
 }
 
 .menu__li {
-    padding: 64px 40px;
+    padding: 64px 2.8%;
     box-sizing: border-box;
 }
 
-.menu__li_logo,
 .menu__li_cart {
-    padding: 0px 40px;
+    padding: 0px 2.8%;
 }
 
 .menu__li_logo:hover {
     opacity: 0.7;
+    transition: 0.3s;
 }
 
 .menu__li_cart:hover {
     opacity: 0.4;
+    transition: 0.3s;
 }
 
 .menu__li1 {
@@ -167,27 +165,50 @@ li {
     background-color: #e5e5e5;
 }
 
+.menu__li4 {
+    padding: 64px 8.8% 64px 2.8%;
+}
+
+.menu__li5 {
+    padding: 64px 2.8% 64px 7.8%;
+}
+
 .menu__link {
     color: #000000;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.4px;
+    transition: 0.3s;
 }
 
 .menu__link:hover {
     color: #989898;
+    transition: 0.3s;
 }
 
 .cart__sum {
     color: #939393;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
     position: relative;
     bottom: 5px;
     left: 9px;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.header__logo:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .main-screen {
@@ -217,7 +238,7 @@ li {
 .main__headding {
     text-align: center;
     color: #212121;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 2.4px;
@@ -262,7 +283,7 @@ li {
 .preferences__text {
     text-align: center;
     color: #212121;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 31px;
@@ -283,7 +304,8 @@ li {
 }
 
 .about-us {
-    background-color: #f1f3f5;;
+    background-color: #f1f3f5;
+    padding-bottom: 50px;
 }
 
 .about-us-wrapper {
@@ -302,7 +324,7 @@ li {
 
 .about-us__heading {
     color: #212121;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
@@ -312,7 +334,7 @@ li {
 
 .about-us__text {
     color: #676767;
-    font-family: "HelveticaWorld", sans-serif;
+    font-family: 'HelveticaWorld', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -337,4 +359,120 @@ li {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+.address_footer {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 52px;
+}
+
+.map {
+    position: absolute;
+    z-index: -2;
+    top: -125px;
+}
+
+.contacts {
+    width: 498px;
+    height: 298px;
+    background-color: #fcfcfc;
+    padding: 49px 52px;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+    display: inline-block;
+}
+
+.contacts__heading {
+    color: #201b1f;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    padding-bottom: 25px;
+}
+
+.contacts__link {
+    display: block;
+    color: #201b1f;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+.contacts__span {
+    margin-left: 17px;
+}
+
+.contacts__icons {
+    position: relative;
+    top: 5px;
+}
+
+.contacts__icons_geo {
+    margin-left: 3px;
+}
+
+.footer {
+    background-color: #201b1f;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 120px 1fr 155px 1.9fr;
+    padding: 66px 100px;
+    grid-gap: 5.67%;
+}
+
+.footer__logo_link {
+    display: block;
+    transition: 0.3s;
+}
+
+.footer__logo_link:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__heading {
+    color: #ffffff;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #383337;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+.footer__heading:hover {
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.footer__text {
+    color: #bdbdbd;
+    font-family: 'HelveticaWorld', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    transition: 0.3s;
+}
+
+.footer__text:hover {
+    color: #ffffff;
+    transition: 0.3s;
 }
