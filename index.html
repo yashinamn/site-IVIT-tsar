@@ -14,7 +14,7 @@
         <address class="address">
             <a href="#" class="address__phone">
                 <img class="address__icons" src="img/phone.png" alt="phone">
-                <span class="address__phone_b">+7 (495) 366 66 54</span>
+                <span class="address__phone_b">+7 (495) 366 66&nbsp;54</span>
             </a>
             <a href="#" class="address__email">
                 <img class="address__icons" src="img/mail.png" alt="mail">
@@ -24,25 +24,29 @@
         <div class="container">
             <nav class="header__menu menu">
                 <div class="menu__icon icon-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="icon-menu_span"> </span>
                 </div>
                 <ul class="menu__list">
-                    <li class="menu__li menu__li1"><a href="#catalog" class="menu__link js-animate-scroll">КАТАЛОГ</a>
+                    <li class="menu__li menu__li1">
+                        <a href="#catalog" class="menu__link js-animate-scroll">КАТАЛОГ</a>
                     </li>
-                    <li class="menu__li menu__li1"><a href="#about-us"
-                            class="menu__link js-animate-scroll">О&nbsp;КОМПАНИИ</a></li>
-                    <li class="menu__li menu__li4"><a href="#preferences"
-                            class="menu__link js-animate-scroll">ПРЕИМУЩЕСТВА</a></li>
-                    <li class="menu__li menu__li1 menu__li5"><a href="#"
-                            class="menu__link ">ДОСТАВКА&nbsp;И&nbsp;ОПЛАТА</a></li>
-                    <li class="menu__li menu__li1"><a href="#contacts" class="menu__link js-animate-scroll">КОНТАКТЫ</a>
+                    <li class="menu__li menu__li1">
+                        <a href="#about-us" class="menu__link js-animate-scroll">О&nbsp;КОМПАНИИ</a>
                     </li>
-                    <li class="menu__li menu__li_cart"><a href="#" class="menu__link "><img src="img/cart.png"
-                                alt="cart"><span class="cart__sum">0</span></a></li>
+                    <li class="menu__li menu__li4">
+                        <a href="#preferences" class="menu__link js-animate-scroll">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li class="menu__li menu__li1 menu__li5">
+                        <a href="#" class="menu__link ">ДОСТАВКА И&nbsp;ОПЛАТА</a>
+                    </li>
+                    <li class="menu__li menu__li1">
+                        <a href="#contacts" class="menu__link js-animate-scroll">КОНТАКТЫ</a>
+                    </li>
+                    <li class="menu__li menu__li_cart">
+                        <a href="#" class="menu__link "><img src="img/cart.png" alt="cart"><span class="cart__sum">0</span></a>
+                    </li>
                 </ul>
-                <a href="index.html" class="header__logo js-animate-scroll"><img src="img/Лого.png" alt="logo"></a>
+                <div class="header__logo"><a href="index.html" class="header__logo_a js-animate-scroll"><img class="header__logo_img" src="img/Лого.png" alt="logo"></a></div>
             </nav>
         </div>
         <div class="main-screen">
@@ -52,6 +56,7 @@
                     <div class="main__text">Мы&nbsp;на&nbsp;рынке камней 10&nbsp;лет. Прямые поставки от&nbsp;заводов производителей разных стран&nbsp;&mdash; позволяют 
                         давать Вам лучшие цены! Весь товар сертифицирован и&nbsp;поставляется с&nbsp;документами.</div>
                     <div class="main__button">Заказать обратный звонок</div>
+                    <img class="ring" src="img/Кольцо.png" alt="ring">
                 </div>
             </div>
         </div>
@@ -59,15 +64,24 @@
     <main class="main">
         <section class="catalog" id="catalog">
             <h2 class="main__headding">КАМНИ МУССАНИТЫ</h2>
-            <img class="ring" src="img/Кольцо.png" alt="ring">
+           
             <div class="container">
                 <div class="catalog-wrapper">
                     <div class="catalog__item">
                         <h3 class="catalog__heading">Наши камни</h3>
-                        <nav class="catalog__menu">
-                            <a href="#" class="menu__item">Муассаниты</a>
-                            <a href="#" class="menu__item">Синтетические бриллианты</a>
-                        </nav>
+                        <ul class="catalog__menu">
+                            <li class="menu__item"><a href="#" >Муассаниты</a>
+                                <ul class="catalog__menu catalog__menu_sub" >
+                                    <li class="menu__item menu__item_sub"><a href="#" >2&nbsp;level</a></li>
+                                    <li class="menu__item menu__item_sub"><a href="#" >2&nbsp;level</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#" >Синтетические бриллианты</a><ul class="catalog__menu catalog__menu_sub" >
+                                <li class="menu__item menu__item_sub"><a href="#" >2&nbsp;level</a></li>
+                                <li class="menu__item menu__item_sub"><a href="#" >2&nbsp;level</a></li>
+                                <li class="menu__item menu__item_sub"><a href="#" >2&nbsp;level</a></li>
+                            </ul></li>
+                        </ul>
                     </div>
                     <div class="products">
                         <div class="products__card">
@@ -76,8 +90,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                         <div class="products__card">
                             <a href="#" class="products__link"><img class="products__image" src="img/камень_вертик.png"
@@ -85,8 +99,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                         <div class="products__card">
                             <a href="#" class="products__link"><img class="products__image"
@@ -94,8 +108,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                         <div class="products__card">
                             <a href="#" class="products__link"><img class="products__image" src="img/камень_вертик.png"
@@ -103,8 +117,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                         <div class="products__card">
                             <a href="#" class="products__link"><img class="products__image"
@@ -112,8 +126,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                         <div class="products__card">
                             <a href="#" class="products__link"><img class="products__image" src="img/камень_вертик.png"
@@ -121,8 +135,8 @@
                             <a href="#" class="products__name">Муассанит <br>
                                 Бесцветный круг</a>
                             <p class="products__art">E-F/VVS (3/3) 1</p>
-                            <span class="products__price">от 150 руб.</span>
-                            <a href="#" class="product__buy-button">Добавить в корзину</a>
+                            <span class="products__price">от&nbsp;150&nbsp;руб.</span>
+                            <a href="#" class="product__buy-button">Добавить в&nbsp;корзину</a>
                         </div>
                     </div>
                     <div></div>
@@ -148,35 +162,34 @@
                 <div class="preferences-wrapper">
                     <div class="preferences__item">
                         <p class="preferences__10">10</p>
-                        <p class="preferences__text preferences__text_10">На рынке
-                            камней 10 лет</p>
+                        <p class="preferences__text preferences__text_10">На&nbsp;рынке камней 10&nbsp;лет</p>
                     </div>
                     <div class="preferences__item">
                         <img src="img/машина.png" alt="" class="preferences__img">
                         <p class="preferences__text preferences__text_truck">Прямые поставки
-                            <br> от заводов производителей <br>
+                            <br> от&nbsp;заводов производителей <br>
                             разных стран</p>
                     </div>
                     <div class="preferences__item">
                         <img src="img/деньги.png" alt="" class="preferences__img">
                         <p class="preferences__text preferences__text_money">Лучшие цены
-                            <br> в России и СНГ</p>
+                            <br> в&nbsp;России и&nbsp;СНГ</p>
                     </div>
                     <div class="preferences__item">
                         <img src="img/сертификат.png" alt="" class="preferences__img">
                         <p class="preferences__text ">Весь товар сертифицирован <br>
-                            и поставляется с документвми</p>
+                            и&nbsp;поставляется с&nbsp;документами</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about-us" id="about-us">
-            <h2 class="main__headding">О НАШЕЙ КОМПАНИИ</h2>
+            <h2 class="main__headding">О&nbsp;НАШЕЙ КОМПАНИИ</h2>
             <div class="container">
                 <div class="about-us-wrapper">
                     <div class="about-us__item">
                         <img class="about-us__img" src="img/бриллиант.png" alt="brilliant">
-                        <h3 class="about-us__heading">КОРОТКО О НАС</h3>
+                        <h3 class="about-us__heading">КОРОТКО О&nbsp;НАС</h3>
                         <p class="about-us__text">На&nbsp;рынке камней 10&nbsp;лет. Прямые поставки от&nbsp;заводов
                             производителей разных стран&nbsp;&mdash; позволяют давать Вам лучшие цены!. Весь товар
                             сертифицирован и&nbsp;поставляется с&nbsp;документами</p>
@@ -219,10 +232,8 @@
 
         </section>
         <address class="address_footer" id="contacts">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34426.06008575757!2d56.17514708467941!3d54.76902022332325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab348727f66f240e!2z0YHRgtCw0L3RhtC40Y8g0KjQsNC60YjQsA!5e0!3m2!1sru!2sru!4v1583044245958!5m2!1sru!2sru"
-                width="100%" height="536px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            <div class="container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0d5eefab961579f71326c816828eba45423123d0729f1f72c9b8b309a222a40&amp;source=constructor" width="100%" height="411" frameborder="0"></iframe>
+            <div class="contacts-wrap">
                 <div class="contacts">
                     <h3 class="contacts__heading">НАШИ КОНТАКТЫ</h3>
                     <a href="#" class="contacts__link"><img class="contacts__icons contacts__icons_geo"
@@ -234,6 +245,7 @@
                             alt="mail"><span class="contacts__span">tsarpavel@inbox.ru</span></a>
                 </div>
             </div>
+            
         </address>
     </main>
     <footer class="footer">
@@ -241,7 +253,7 @@
             <div class="footer-wrapper">
                 <div class="footer__logo">
                     <a class="footer__logo_link" href="#">
-                        <img src="img/Лого_серый.png" alt="logo">
+                        <img class="footer__logo_img" src="img/Лого_серый.png" alt="logo">
                     </a>
                 </div>
                 <div class="footer__item">
@@ -251,19 +263,20 @@
                 </div>
                 <div class="footer__item">
                     <h3 class="footer__heading">Меню сайта</h3>
-                    <a class="footer__text js-animate-scroll" href="#about-us">О компании</a>
+                    <a class="footer__text js-animate-scroll" href="#about-us">О&nbsp;компании</a>
                     <a class="footer__text js-animate-scroll" href="#catalog">Продукция</a>
-                    <a class="footer__text " href="#">Доставка и оплата</a>
+                    <a class="footer__text " href="#">Доставка и&nbsp;оплата</a>
                 </div>
                 <div class="footer__item">
                     <h3 class="footer__heading">Наши контакты</h3>
-                    <a class="footer__text" href="#">Телефон: +7 (495) 588 88 38</a>
-                    <a class="footer__text" href="#">По вопросам рекламы: supportusers@tsar.ru</a>
-                    <a class="footer__text" href="#">По вопросам качества товара: supportusers@tsar.ru</a>
+                    <a class="footer__text" href="#">Телефон: +7 (495) 588 88&nbsp;38</a>
+                    <a class="footer__text" href="#">По&nbsp;вопросам рекламы: supportusers@tsar.ru</a>
+                    <a class="footer__text" href="#">По&nbsp;вопросам качества товара: supportusers@tsar.ru</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js">
     </script>
 

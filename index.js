@@ -22,3 +22,11 @@
     scrollElements.forEach( scrollElement => scrollElement.addEventListener('click', animateScroll));
   });
 })(document, window);
+
+
+$(document).ready(function() {
+  $('.menu__icon').click(function(event) {
+    $('.menu__icon, .menu__list').toggleClass('active');
+  });
+});
+
